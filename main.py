@@ -8,9 +8,8 @@ from data import ITINERARIO, RISTORANTI, BIGLIETTI
 load_dotenv()
 
 # Ottieni il token del bot da una variabile d'ambiente
-TOKEN = os.getenv('TELEGRAM_TOKEN')
-print(f"Token del bot: {TOKEN}")
-
+# TOKEN = os.getenv('TELEGRAM_TOKEN')
+TOKEN = "8051004358:AAGecvVayQE7RCVwtnLyZX_pTYgNmxeFdMQ"
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /start per dare il benvenuto e spiegare i comandi disponibili"""
     await update.message.reply_text(
