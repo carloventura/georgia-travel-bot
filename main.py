@@ -9,6 +9,7 @@ load_dotenv()
 
 # Ottieni il token del bot da una variabile d'ambiente
 TOKEN = os.getenv('TELEGRAM_TOKEN')
+print(f"Token del bot: {TOKEN}")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Comando /start per dare il benvenuto e spiegare i comandi disponibili"""
